@@ -7,6 +7,13 @@ explorer la mémoire dans votre compilateur pour observer votre variable.
 
 int main()
 {
-    int *variable = malloc(1 * sizeof(int));
+    printf("Exemple avec l'utilisation d'un pointeur\n");
+    int *ptr = malloc(1 * sizeof(int));
+    printf("Adresse memoire: %p\n", ptr);
+
+    printf("Exemple en utilisant simplement une variable\n");
+    int var = 5;
+    printf("Adresse memoire: %p\n", &var);
+
     return 0;
 }
